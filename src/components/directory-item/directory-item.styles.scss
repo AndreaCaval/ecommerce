@@ -1,4 +1,4 @@
-.category-container {
+.directory-item-container {
     min-width: 30%;
     height: 240px;
     flex: 1 1 auto;
@@ -14,7 +14,7 @@
             transform: scale(1.1);
             transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         }
-        & .category-body-container {
+        & .body {
             opacity: 0.9;
         }
     }
@@ -33,7 +33,7 @@
         background-size: cover;
         background-position: center;
     }
-    .category-body-container {
+    .body {
         height: 90px;
         padding: 0 25px;
         display: flex;
@@ -44,11 +44,15 @@
         background-color: white;
         opacity: 0.7;
         position: absolute;
+        .title-shopnow {
+            text-align: center;
+        }
         h2 {
             font-weight: bold;
-            margin: 0 6px 0;
+            margin: 10px 6px 0;
             font-size: 22px;
             color: #4a4a4a;
+            text-transform: uppercase;
         }
         p {
             font-weight: lighter;
